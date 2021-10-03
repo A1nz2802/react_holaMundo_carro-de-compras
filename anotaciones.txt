@@ -1,0 +1,45 @@
+1- npx create-react-app mi-app
+Lo que hará npx es buscar en internet un paquete llamado "create-react-app"
+lo descarga y lo ejecuta y le pasará el argumento de "mi-app"
+Es decir estaremos utilizando siempre la ultima versión del paquete "create-react-app"
+
+2- npm start
+Nos permite ejecutar el servidor de desarrollo
+Una funcionalidad de este servidor es que si hacemos un cambio de nuestros
+archivos del proyecto, este cambio va a ser tomado inmediatamente por react
+
+3- npm run build
+Genera un paquete enfocado para su uso en producción
+Toma todos nuestros archivos de js/css, etc y los va a mover en una carpeta
+que será utilizada en producción. Esta carpeta tendrá un código minificado por
+temas de optimización para cuando lo despleguemos a la nube
+
+4- npm test
+Permite correr todos nuestros test que hayamos creado para nuestro proyecto en react
+
+5- npm run eject 
+Elimina la herramienta de npm run eject y toma todos los archivos de configuración
+y los deja en el directorio de nuestra aplicación. Esto se utiliza cuando queremos
+customizar una app de react demasiado al detalle pero que en la práctica pocas veces
+utilizaremos. Ademas no es recomendado ejectar. Lo mejor es nunca utilizar este comando.
+
+#####################################################
+
+public: Contiene todos los archivos públicos para los usuarios.
+	- index.html: Archivo que contiene la aplicación de react y será servido al usuario.
+	Nuestra app de react estará viviendo en <div id="root"></div>
+	- manifest.json: Contiene algunas configuraciones de la aplicación, por ejemplo:
+	short_name (nombre corto), name (nombre completo), algunos iconos, start_url (url inicial), etc.
+	robots.txt: Permite
+	- robots.txt: Permite que la app sea más facil de indexar por los robots de google o algun otro navegador
+	- package-lock.json: Contiene todas las dependencias instaladas con una version/url en particular. Cuando
+	queramos desplegar nuestra app a producción para asegurarnos que siempre descargará los paquetes que nosotros 
+	le indiquemos va a utilizar este archivo en lugar de utilizar las últimas versiones de las dependencias.
+	- package.json: Contiene un nombre, version, si la repo es privada o no, información de las dependencias, algunos scripts, la lista
+	de exploradores soportados, etc.
+
+src: Todas app creada con create-react-app necesita única y exclusivamente 2 archivos para poder funcionar (index.js, index.html dentro de la carpeta public)
+	
+
+
+	
